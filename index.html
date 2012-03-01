@@ -26,43 +26,10 @@
         <p>For the best experience please use the latest <b>Chrome</b> or <b>Safari</b> browser. Firefox 10 (to be released soon) will also handle it.</p>
     </div>
 
-    <!--
-        
-        Here is where interesting thing start to happen.
-        
-        Each step of the presentation should be an element inside the `#impress` with a class name
-        of `step`. These step elements are positioned, rotated and scaled by impress.js, and
-        the 'camera' shows them on each step of the presentation.
-        
-        Positioning information is passed through data attributes.
-        
-        In the example below we only specify x and y position of the step element with `data-x="-1000"`
-        and `data-y="-1500` attributes. This means that **the center** of the element (yes, the center)
-        will be positioned in point x = -1000px and y = -1500px of the presentation 'canvas'.
-        
-        It will not be rotated or scaled.
-        
-    -->
-
-    <!--
-        
-        The `id` attribute of the step element is used to identify it in the URL, but it's optional.
-        If it is not defined, it will get a default value of `step-N` where N is a number of slide.
-        
-        So in the example below it'll be `step-2`.
-        
-        The hash part of the url when this step is active will be `#/step-2`.
-        
-        You can also use `#step-2` in a link, to point directly to this particular step.
-        
-        Please note, that while `#/step-2` (with slash) would also work in a link it's not recommended.
-        Using classic `id`-based links like `#step-2` makes these links usable also in fallback mode.
-        
-    -->
 
     <div class="step slide" data-x="1000" data-y="-1500" data-scale='2'>
       <q><center>
-          It's Carolyn Healey's <h1>birthday celebration!!!!</h1>
+          It's Carolyn Healey's <h1>half birthday celebration!!!!</h1>
       </center></q>
     </div>
 
@@ -71,14 +38,46 @@
       <img src='baby.jpg'>
     </div>
 
+    <div id="1" class="step slide" data-x="1100" data-y="-3000" data-scale="2">
+      <img src='1.jpg' width='800'>
+    </div>
+
+    <div id="1_1" class="step slide" data-x="1100" data-y="-5000" data-scale="2">
+      <img src='1_1.jpg' width='800'>
+    </div>
+
     <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="3">
         <p>Before you knew it she was <b class="positioning">riding</b> her <b class="scaling">bike</b></p>
       <img src='bike.jpg'>
     </div>
 
+    <div id="2" class="step slide" data-x="1100" data-y="-7000" data-scale="2">
+      <center>
+        <img src='2.jpg' width='400'>
+      </center>
+    </div>
+
+    <div id="2_1" class="step slide" data-x="1100" data-y="-9000" data-scale="2">
+      <center>
+        <img src='2_2.jpg' width='400'>
+      </center>
+    </div>
+
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="3">
       <p>When she was 2 she started drawing...</p>
       <img src='writing.jpg'>
+    </div>
+
+    <div id="3" class="step slide" data-x="1100" data-y="-11000" data-scale="2">
+      <center>
+        <img src='3.jpg' width='800'>
+      </center>
+    </div>
+
+    <div id="3_1" class="step slide" data-x="1100" data-y="-13000" data-scale="2">
+      <center>
+        <img src='3_1.jpg' width='450'>
+      </center>
     </div>
 
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
@@ -87,15 +86,34 @@
       </p>
     </div>
 
+
+    <div id="4" class="step slide" data-x="1100" data-y="-15000" data-scale="2">
+      <center>
+        <img src='4.jpg' width='800'>
+      </center>
+    </div>
+
     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="4">
       <p>At 4 she got a dog named Chloe.
         <img src='clo.jpg'>
       </p>
     </div>
 
+    <div id="5" class="step slide" data-x="1100" data-y="-17000" data-scale="2">
+      <center>
+        <img src='5.jpg' width='800'>
+      </center>
+    </div>
+
     <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="1">
       <p>At 5 Carolyn got her first job, on an apple farm.</p>
         <img src='apples.jpg'>
+    </div>
+
+    <div id="5_1" class="step slide" data-x="1100" data-y="-19000" data-scale="2">
+      <center>
+        <img src='5_1.jpg' width='400'>
+      </center>
     </div>
 
     <div id="source" class="step" data-x="6700" data-y="2000" data-rotate="20" data-scale="1">
@@ -107,6 +125,8 @@
       </p>
     </div>
 
+    <div id="overview" class="step" data-x="0" data-y="-5000" data-scale=25">
+    </div>
 
 </div>
 
